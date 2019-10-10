@@ -54,18 +54,18 @@
 						<div class="form-group col-md-6">
 							<label for="inputAddress">Nome</label> <input
 								class="form-control" placeholder="Nome" name="nome"
-								id="form_name" required autofocus onblur="valida('nome');">
+								id="form_name" required autofocus onblur="valida('nome');" value=${aluno.nome }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label for="inputAddress">Sobrenome</label> <input
 								class="form-control" placeholder="Sobrenome" name="sobrenome"
-								id="form_name" required autofocus onblur="valida('sobrenome');">
+								id="form_name" required autofocus onblur="valida('sobrenome');" value=${aluno.sobrenome }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label>CPF/CNPJ</label> <input id="cpfOuCnpj" required
-								name=cpf type="text" class="form-control">
+								name=cpf type="text" class="form-control"  value=${aluno.cpf }>
 						</div>
 
 
@@ -73,19 +73,19 @@
 							<label for="inputEmail4">Email</label> <input
 								class="form-control" id="inputEmail4" name="email"
 								placeholder="Email" required
-								onblur="valida('email'); validacaoEmail(form.email);">
+								onblur="valida('email'); validacaoEmail(form.email);"  value=${aluno.email }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label for="inputAddress2">RM</label> <input class="form-control"
 								placeholder="RM" name="rm" id="rm" required
-								onblur="valida('rm');">
+								onblur="valida('rm');"  value=${aluno.rm }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label for="inputPassword4">Senha</label> <input
 								class="form-control" placeholder="Senha" name="senha" id="senha"
-								required onblur="valida('senha');">
+								required onblur="valida('senha');"  value=${aluno.senha }>
 
 						</div>
 
@@ -93,39 +93,39 @@
 						<div class="form-group col-md-6">
 							<label>Celular</label> <input type="text" class="form-control"
 								placeholder="(nn) n nnnn nnnn" id="telefone" required
-								name="telefone" />
+								name="telefone" >
 						</div>
 
 						<div class="form-group col-md-6">
 							<label>CEP</label> <input id="cep" placeholder="Digite seu CEP"
 								required name="cep" class="form-control" class="mb-3"
-								pattern="\d*" maxlength="9" type="text" />
+								pattern="\d*" maxlength="9" type="text"  value=${aluno.cep }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label>Logradouro</label> <input id="logradouro" type="text" name="logr"
-								class="form-control" />
+								class="form-control" value=${aluno.logr }>
 						</div>
 						
 
 						<div class="form-group col-md-6">
 							<label>Nº</label> <input id="numero" type="text" required
-								name="n" class="form-control" />
+								name="n" class="form-control" value=${aluno.numero }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label>Bairro</label> <input id="bairro" type="text"
-								name="bairro" class="form-control" />
+								name="bairro" class="form-control" value=${aluno.bairro }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label>Cidade</label> <input id="cidade" type="text"
-								name="cidade" class="form-control" />
+								name="cidade" class="form-control" value=${aluno.cidade }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label>UF</label> <input id="uf" type="text" name="uf"
-								class="form-control" />
+								class="form-control" value=${aluno.uf }>
 						</div>
 
 

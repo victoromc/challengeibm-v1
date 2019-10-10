@@ -14,7 +14,7 @@ public class Alterar implements Tarefa {
 		// Alterar no banco de dados //
 		Aluno aluno = new Aluno();
 		AlunoDAO dao = new AlunoDAO();
-		AlunoBO bo = new AlunoBO();
+		AlunoBO bo = new AlunoBO(); 
 		aluno.setNome(req.getParameter("nome"));
 		aluno.setSobrenome(req.getParameter("sobrenome"));
 		aluno.setCpf(req.getParameter("cpf"));

@@ -21,15 +21,21 @@ public class AlunoDAO {
 			ResultSet rs = stmt.executeQuery();
 
 			if (rs.next()) {
-				rs.getInt("ID_ALUNO");
-				rs.getString("NM_ALUNO");
-				rs.getString("SOBRENOME_ALUNO");
-				rs.getString("CPF_ALUNO");
-				rs.getString("RM_ALUNO");
-				rs.getString("EMAIL_ALUNO");
-				rs.getString("PW_ALUNO");
-
 				aluno = new Aluno();
+				aluno.setCod(rs.getInt("ID_ALUNO")); 
+				aluno.setNome(rs.getString("NM_ALUNO"));
+				aluno.setSobrenome(rs.getString("SOBRENOME_ALUNO"));
+				aluno.setCpf(rs.getString("CPF_ALUNO"));
+				aluno.setRm(rs.getString("RM_ALUNO"));
+				aluno.setEmail(rs.getString("EMAIL_ALUNO"));
+				aluno.setSenha(rs.getString("PW_ALUNO"));
+				aluno.setTelefone(rs.getString("TELEFONE_ALUNO"));
+				aluno.setCep(rs.getString("CEP"));
+				aluno.setLogr(rs.getString("LOGR"));
+				aluno.setNumero(rs.getString("NUMERO"));
+				aluno.setBairro(rs.getString("BAIRRO"));
+				aluno.setCidade(rs.getString("CIDADE"));		
+				aluno.setUf(rs.getString("UF"));
 			}
 
 		} catch (ClassNotFoundException | SQLException e) {
@@ -53,15 +59,21 @@ public class AlunoDAO {
 
 			aluno = new Aluno();
 			if (rs.next()) {
-				rs.getInt("ID_ALUNO");
+				aluno = new Aluno();
+				aluno.setCod(rs.getInt("ID_ALUNO")); 
 				aluno.setNome(rs.getString("NM_ALUNO"));
-				rs.getString("SOBRENOME_ALUNO");
-				rs.getString("CPF_ALUNO");
-				rs.getString("RM_ALUNO");
-				rs.getString("EMAIL_ALUNO");
-				rs.getString("PW_ALUNO");
-
-				
+				aluno.setSobrenome(rs.getString("SOBRENOME_ALUNO"));
+				aluno.setCpf(rs.getString("CPF_ALUNO"));
+				aluno.setRm(rs.getString("RM_ALUNO"));
+				aluno.setEmail(rs.getString("EMAIL_ALUNO"));
+				aluno.setSenha(rs.getString("PW_ALUNO"));
+				aluno.setTelefone(rs.getString("TELEFONE_ALUNO"));
+				aluno.setCep(rs.getString("CEP"));
+				aluno.setLogr(rs.getString("LOGR"));
+				aluno.setNumero(rs.getString("NUMERO"));
+				aluno.setBairro(rs.getString("BAIRRO"));
+				aluno.setCidade(rs.getString("CIDADE"));		
+				aluno.setUf(rs.getString("UF"));
 			}
 
 		} catch (ClassNotFoundException | SQLException e) {
@@ -107,22 +119,22 @@ public class AlunoDAO {
 
 		try (Connection conn = Conexao.queroConectar()) {
 			PreparedStatement stmt = conn.prepareStatement(
-					"UPDATE FN_ALUNO SET ID_ALUNO=?, NM_ALUNO=?, SOBRENOME_ALUNO=?, CPF_ALUNO=?, EMAIL_ALUNO=?, RM_ALUNO=?, PW_ALUNO=?, TELEFONE_ALUNO=?, CEP=?, LOGR=?, NUMERO=?, BAIRRO=?,"
+					"UPDATE FN_ALUNO SET ID_ALUNO=? ,NM_ALUNO=?, SOBRENOME_ALUNO=?, CPF_ALUNO=?, EMAIL_ALUNO=?, RM_ALUNO=?, PW_ALUNO=?, TELEFONE_ALUNO=?, CEP=?, LOGR=?, NUMERO=?, BAIRRO=?,"
 							+ "CIDADE=?, UF=? WHERE RM_ALUNO=?");
-			stmt.setInt(1,  a.getCod());
-			stmt.setString(2, a.getNome());
-			stmt.setString(3, a.getSobrenome());
-			stmt.setString(4, a.getCpf());
-			stmt.setString(5, a.getEmail());
-			stmt.setString(6, a.getRm());
-			stmt.setString(7, a.getSenha());
-			stmt.setString(8, a.getTelefone());
-			stmt.setString(9, a.getCep());
-			stmt.setString(10, a.getLogr());
-			stmt.setString(11, a.getNumero());
-			stmt.setString(12, a.getBairro());
-			stmt.setString(13, a.getCidade());
-			stmt.setString(14, a.getUf());
+			stmt.setString(1,  a.getRm());
+			//stmt.setString(2, a.getNome());
+			//stmt.setString(3, a.getSobrenome());
+			//stmt.setString(4, a.getCpf());
+			//stmt.setString(5, a.getEmail());
+			//stmt.setString(6, a.getRm());
+			//stmt.setString(7, a.getSenha());
+			//stmt.setString(8, a.getTelefone());
+			//stmt.setString(9, a.getCep());
+			//stmt.setString(10, a.getLogr());
+			//stmt.setString(11, a.getNumero());
+			//stmt.setString(12, a.getBairro());
+			//stmt.setString(13, a.getCidade());
+			//stmt.setString(14, a.getUf());
 
 			stmt.executeUpdate();
 

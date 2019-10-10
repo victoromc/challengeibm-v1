@@ -6,6 +6,7 @@
 <meta charset="utf-8">
 <title>Avenger´s Park</title>
 <link rel="stylesheet" href="css/main.css">
+<link rel="shortcut icon" href="img/favicon.ico" />
 </head>
 <body>
 	<section class="container">

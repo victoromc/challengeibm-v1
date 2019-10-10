@@ -1,18 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<%@include file="bootstrap.jsp"%>
 <link rel="stylesheet" href="css/principal.css">
-
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/bootstrap-grid.css">
-<link rel="stylesheet" href="css/bootstrap-reboot.css">
+<link rel="shortcut icon" href="img/favicon.ico" />
 
 <title>Curso de Nivelamento</title>
 </head>
@@ -32,49 +22,23 @@
 				<a class="nav-item nav-link" href="construcao.jsp">Português</a> <a
 					class="nav-item nav-link" href="construcao.jsp">Lógica de
 					Programação</a>
-					
-					<li class="nav-item dropdown">
-					<a
-						class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-						role="button" aria-haspopup="true" aria-expanded="false">Perfil</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="alterarPerfil.jsp">Alterar</a> <a
-								class="dropdown-item" href="excluirPerfil.jsp">Excluir</a>
-							<div class="dropdown-divider"></div> 
 
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+					role="button" aria-haspopup="true" aria-expanded="false">Perfil</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="alterarPerfil.jsp">Alterar</a> <a
+							class="dropdown-item" href="excluirPerfil.jsp">Excluir</a>
+						<div class="dropdown-divider"></div>
+						<a class="nav-item nav-link" href="controller?tarefa=Logout">Logout</a>
 
+					</div></li>
 			</div>
 		</div>
 	</nav>
 
 	<!--------------------------------------------------------------------------------------------------------->
-	<!-- Banner Principal  -->
-
-	<div id="carouselExampleControls" class="carousel slide"
-		data-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="img/mat 01.jpg" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item">
-				<img src="img/ABC 02.jpg" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item">
-				<img src="img/Log 02.jpg" class="d-block w-100" alt="...">
-			</div>
-		</div>
-		<a class="carousel-control-prev" href="#carouselExampleControls"
-			role="button" data-slide="prev"> <span
-			class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-			class="sr-only">Previous</span>
-		</a> <a class="carousel-control-next" href="#carouselExampleControls"
-			role="button" data-slide="next"> <span
-			class="carousel-control-next-icon" aria-hidden="true"></span> <span
-			class="sr-only">Next</span>
-		</a>
-	</div>
-
-	<!---------------------------------------------------------------------------------------------------------------------------------------->
+	<%@include file="bannerPrincipal.jsp"%>
 	<!-- Seção Principal -->
 
 	<div class="container">

@@ -32,6 +32,10 @@ form{
   float: right;
 }
 
+#btnExcluir{
+  float: right;
+}
+
 /*------------------------------------------------------------------  */
 footer{
   background-color: #4D495B;

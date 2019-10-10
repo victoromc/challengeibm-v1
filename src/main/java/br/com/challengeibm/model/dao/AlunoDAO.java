@@ -51,16 +51,17 @@ public class AlunoDAO {
 
 			ResultSet rs = stmt.executeQuery();
 
+			aluno = new Aluno();
 			if (rs.next()) {
 				rs.getInt("ID_ALUNO");
-				rs.getString("NM_ALUNO");
+				aluno.setNome(rs.getString("NM_ALUNO"));
 				rs.getString("SOBRENOME_ALUNO");
 				rs.getString("CPF_ALUNO");
 				rs.getString("RM_ALUNO");
 				rs.getString("EMAIL_ALUNO");
 				rs.getString("PW_ALUNO");
 
-				aluno = new Aluno();
+				
 			}
 
 		} catch (ClassNotFoundException | SQLException e) {

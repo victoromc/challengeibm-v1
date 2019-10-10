@@ -1,20 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	
+<%@include file="bootstrap.jsp" %>
 <link rel="stylesheet" href="css/cadastro.css">
 <link rel="stylesheet" type="text/css" href="css/formulario.css" />
-
-
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/bootstrap-grid.css">
-<link rel="stylesheet" href="css/bootstrap-reboot.css">
+<link rel="shortcut icon" href="img/favicon.ico" />
 
 <title>Curso de Nivelamento</title>
 
@@ -90,14 +80,14 @@
 
 						<div class="form-group col-md-6">
 							<label>CPF/CNPJ</label> <input id="cpfOuCnpj" required
-								name=cpf type="text" class="form-control">
+								name=cpf type="text" placeholder="Digite seu CPF/CNPJ" class="form-control">
 						</div>
 
 
 						<div class="form-group col-md-6">
 							<label for="inputEmail4">Email</label> <input
 								class="form-control" id="inputEmail4" name="email"
-								placeholder="Email" required
+								placeholder="Ex: email@email.com" required
 								onblur="valida('email'); validacaoEmail(form.email);">
 						</div>
 

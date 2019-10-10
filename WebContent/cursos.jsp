@@ -1,84 +1,58 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<%@include file="bootstrap.jsp"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <link rel="stylesheet" href="css/principal.css">
-<!-- <link rel="stylesheet" href="css/cadastro.css"> -->
-
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/bootstrap-grid.css">
-<link rel="stylesheet" href="css/bootstrap-reboot.css">
+<link rel="shortcut icon" href="img/favicon.ico" />
 
 <title>Curso de Nivelamento</title>
 
-
 </head>
 <body>
-	<!--- Menu ------------------------------------>
-	<!--- Menu ------------------------------------>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="cursos.jsp"><img class="logo"
-			src="img/Falcon IT-01.png"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-			aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-				<a class="nav-item nav-link" href="conteudoMatematica.jsp">Matemática</a>
-				<a class="nav-item nav-link" href="construcao.jsp">Português</a> <a
-					class="nav-item nav-link" href="construcao.jsp">Lógica de
-					Programação</a>
-					
-					<li class="nav-item dropdown">
-					<a
-						class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-						role="button" aria-haspopup="true" aria-expanded="false">Perfil</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="alterarPerfil.jsp">Alterar</a> <a
-								class="dropdown-item" href="excluirPerfil.jsp">Excluir</a>
-							<div class="dropdown-divider"></div> 
+	<c:choose>
+		<c:when test="${not empty aluno}">
+			<!--- Menu ------------------------------------>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="cursos.jsp"><img class="logo"
+					src="img/Falcon IT-01.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-item nav-link" href="conteudoMatematica.jsp">Matemática</a>
+						<a class="nav-item nav-link" href="construcao.jsp">Português</a> <a
+							class="nav-item nav-link" href="construcao.jsp">Lógica de
+							Programação</a>
 
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+							role="button" aria-haspopup="true" aria-expanded="false">Perfil</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="alterarPerfil.jsp">Alterar</a> <a
+									class="dropdown-item" href="excluirPerfil.jsp">Excluir</a>
+								<div class="dropdown-divider"></div>
 
-			</div>
-		</div>
-	</nav>
+								<a class="nav-item nav-link" href="controller?tarefa=Logout">Logout</a>
 
+							</div></li>
+						<p>Seja bem-vindo, ${aluno.nome}!</p>
+					</div>
+				</div>
+			</nav>
+
+		</c:when>
+		<c:otherwise>
+				<a href="index.jsp">Voltar para tela de login.</a>
+			</c:otherwise>
+	</c:choose>
 	<!--------------------------------------------------------------------------------------------------------->
-	<!-- Banner Principal  -->
-
-	<div id="carouselExampleControls" class="carousel slide"
-		data-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="img/mat 01.jpg" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item">
-				<img src="img/ABC 02.jpg" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item">
-				<img src="img/Log 02.jpg" class="d-block w-100" alt="...">
-			</div>
-		</div>
-		<a class="carousel-control-prev" href="#carouselExampleControls"
-			role="button" data-slide="prev"> <span
-			class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-			class="sr-only">Previous</span>
-		</a> <a class="carousel-control-next" href="#carouselExampleControls"
-			role="button" data-slide="next"> <span
-			class="carousel-control-next-icon" aria-hidden="true"></span> <span
-			class="sr-only">Next</span>
-		</a>
-	</div>
-
-	<!---------------------------------------------------------------------------------------------------------------------------------------->
+	<%@include file="bannerPrincipal.jsp"%>
 	<!-- Seção Principal -->
 
 	<div class="container">
@@ -89,9 +63,10 @@
 						<img src="img/mat 02.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">Matemática</h5>
-							<p class="card-text">Mussum Ipsum, cacilds vidis litro
-								abertis. Cevadis im ampola pa arma uma pindureta. Admodum
-								accumsan disputationi eu sit. Vide electram sadipscing et per.</p>
+							<p class="card-text">A Matemática é uma ciência que relaciona
+								a lógica com situações práticas habituais. Ela desenvolve uma
+								constante busca pela veracidade dos fatos por meio de técnicas
+								precisas e exatas.</p>
 							<a href="conteudoMatematica.jsp" class="btn btn-primary">Saiba
 								mais...</a>
 						</div>
@@ -101,9 +76,10 @@
 						<img src="img/ABC 01.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">Português</h5>
-							<p class="card-text">Mussum Ipsum, cacilds vidis litro
-								abertis. Cevadis im ampola pa arma uma pindureta. Admodum
-								accumsan disputationi eu sit. Vide electram sadipscing et per.</p>
+							<p class="card-text">O estudo da gramática da língua
+								portuguesa, que é a averiguação da correspondência entre o que
+								se fala ou escreve e as normas ou leis vigentes para o uso da
+								comunicação de forma culta, polida.</p>
 							<a href="construcao.jsp" class="btn btn-primary">Saiba
 								mais...</a>
 						</div>
@@ -113,9 +89,9 @@
 						<img src="img/Log 01.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">Lógica de Programação</h5>
-							<p class="card-text">Mussum Ipsum, cacilds vidis litro
-								abertis. Cevadis im ampola pa arma uma pindureta. Admodum
-								accumsan disputationi eu sit. Vide electram sadipscing et per.</p>
+							<p class="card-text">A Lógica de Programação é um paradigma
+								de programação que faz uso da lógica matemática. Tornando a
+								lógica uma ferramenta eficaz para o desenvolvimento de teorias.</p>
 							<a href="construcao.jsp" class="btn btn-primary">Saiba
 								mais...</a>
 						</div>

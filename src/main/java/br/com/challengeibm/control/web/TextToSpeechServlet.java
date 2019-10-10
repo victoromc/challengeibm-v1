@@ -25,7 +25,7 @@ public class TextToSpeechServlet extends HttpServlet {
 		String msg = req.getParameter("question");
 		
 		IamOptions options = new IamOptions.Builder()
-				.apiKey("eiCoUuYKWvWspLBQxnVgFqxKD9HNzKkn85nUaM9tKJVW")
+				.apiKey("FyigMbxW1hKgUAEqHS7GXqGuLAiUa-I8sDwUFz38uW98")
 				.build();
 		
 		TextToSpeech service = new TextToSpeech(options);

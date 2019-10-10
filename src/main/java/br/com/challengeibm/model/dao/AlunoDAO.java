@@ -59,25 +59,31 @@ public class AlunoDAO {
 
 			aluno = new Aluno();
 			if (rs.next()) {
-				aluno = new Aluno();
-				aluno.setCod(rs.getInt("ID_ALUNO")); 
-				aluno.setNome(rs.getString("NM_ALUNO"));
-				aluno.setSobrenome(rs.getString("SOBRENOME_ALUNO"));
-				aluno.setCpf(rs.getString("CPF_ALUNO"));
-				aluno.setRm(rs.getString("RM_ALUNO"));
-				aluno.setEmail(rs.getString("EMAIL_ALUNO"));
-				aluno.setSenha(rs.getString("PW_ALUNO"));
-				aluno.setTelefone(rs.getString("TELEFONE_ALUNO"));
-				aluno.setCep(rs.getString("CEP"));
-				aluno.setLogr(rs.getString("LOGR"));
-				aluno.setNumero(rs.getString("NUMERO"));
-				aluno.setBairro(rs.getString("BAIRRO"));
-				aluno.setCidade(rs.getString("CIDADE"));		
-				aluno.setUf(rs.getString("UF"));
+				Aluno setandoAluno = new Aluno();
+				setandoAluno.setCod(rs.getInt("ID_ALUNO")); 
+				setandoAluno.setNome(rs.getString("NM_ALUNO"));
+				setandoAluno.setSobrenome(rs.getString("SOBRENOME_ALUNO"));
+				setandoAluno.setCpf(rs.getString("CPF_ALUNO"));
+				setandoAluno.setRm(rs.getString("RM_ALUNO"));
+				setandoAluno.setEmail(rs.getString("EMAIL_ALUNO"));
+				setandoAluno.setSenha(rs.getString("PW_ALUNO"));
+				setandoAluno.setTelefone(rs.getString("TELEFONE_ALUNO"));
+				setandoAluno.setCep(rs.getString("CEP"));
+				setandoAluno.setLogr(rs.getString("LOGR"));
+				setandoAluno.setNumero(rs.getString("NUMERO"));
+				setandoAluno.setBairro(rs.getString("BAIRRO"));
+				setandoAluno.setCidade(rs.getString("CIDADE"));		
+				setandoAluno.setUf(rs.getString("UF"));
+				
+				aluno = setandoAluno;
+			}else {
+				aluno=null;
 			}
+			
 
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
+			
 		}
 
 		return aluno;

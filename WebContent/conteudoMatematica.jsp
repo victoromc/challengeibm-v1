@@ -97,8 +97,7 @@
 	</div>
 
 	<div>
-		<img id="imgBot" class="imgBot2" src="img/bot.png" alt="Bot"
-			height="80" width="80">
+		<img id="imgBot" class="imgBot2" src="img/bot.png" alt="Bot" height="80" width="80">
 	</div>
 
 	<!---------------------------------------------------------------------------------------------------------------------------------------->

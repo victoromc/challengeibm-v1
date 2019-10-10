@@ -41,7 +41,7 @@
 								<a class="nav-item nav-link" href="controller?tarefa=Logout">Logout</a>
 
 							</div></li>
-						<p>Seja bem-vindo, ${aluno.nome}!</p>
+						<p>Seja bem-vindo, ${aluno.nome.toUpperCase()}!</p>
 					</div>
 				</div>
 			</nav>

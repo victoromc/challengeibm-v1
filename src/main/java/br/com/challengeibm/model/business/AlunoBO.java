@@ -33,8 +33,6 @@ public class AlunoBO {
 		if (aluno.getSenha().length() < 3 || aluno.getSenha().length() > 15) {
 			System.out.println("Senha deve estar entre 3 e 15 caracteres");
 		}
-
-		aluno.setNome(aluno.getNome().toUpperCase());
 		
 		return 1;
 
@@ -44,10 +42,10 @@ public class AlunoBO {
 		AlunoDAO dao = new AlunoDAO();
 		if (dao.consultarAlunoPorRm(aluno.getRm()) != null ) {
 			dao.atualizarAluno(aluno);
-			System.out.println("atualizado");
+			System.out.println("Aluno Atualizado");
 			return 1;
 		} else {
-			System.out.println("nao foi atualizado");
+			System.out.println("Erro na att");
 			return 0;
 		}
 		

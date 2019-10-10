@@ -15,6 +15,8 @@ public class Alterar implements Tarefa {
 		Aluno aluno = new Aluno();
 		AlunoDAO dao = new AlunoDAO();
 		AlunoBO bo = new AlunoBO(); 
+		
+		
 		aluno.setNome(req.getParameter("nome"));
 		aluno.setSobrenome(req.getParameter("sobrenome"));
 		aluno.setCpf(req.getParameter("cpf"));
@@ -29,7 +31,7 @@ public class Alterar implements Tarefa {
 		aluno.setCidade(req.getParameter("cidade"));
 		aluno.setUf(req.getParameter("uf"));
 		
-		if (bo.atualizarAluno(aluno) == 1) {
+		if (bo.novoAluno(aluno) == 1) {
 			System.out.println("att");
 			dao.atualizarAluno(aluno);
 			

@@ -50,10 +50,10 @@ public class AlunoDAO {
 
 		try (Connection conn = Conexao.queroConectar()) {
 			PreparedStatement stmt = conn
-					.prepareStatement("SELECT * FROM FN_ALUNO WHERE RM_ALUNO = ? AND PW_ALUNO = ?");
+					.prepareStatement("SELECT * FROM FN_ALUNO WHERE RM_ALUNO = ?");
 
 			stmt.setString(1, rm);
-			stmt.setString(2, senha);
+		
 
 			ResultSet rs = stmt.executeQuery();
 
@@ -119,22 +119,25 @@ public class AlunoDAO {
 
 		try (Connection conn = Conexao.queroConectar()) {
 			PreparedStatement stmt = conn.prepareStatement(
-					"UPDATE FN_ALUNO SET ID_ALUNO=? ,NM_ALUNO=?, SOBRENOME_ALUNO=?, CPF_ALUNO=?, EMAIL_ALUNO=?, RM_ALUNO=?, PW_ALUNO=?, TELEFONE_ALUNO=?, CEP=?, LOGR=?, NUMERO=?, BAIRRO=?,"
-							+ "CIDADE=?, UF=? WHERE RM_ALUNO=?");
-			stmt.setString(1,  a.getRm());
-			//stmt.setString(2, a.getNome());
-			//stmt.setString(3, a.getSobrenome());
-			//stmt.setString(4, a.getCpf());
-			//stmt.setString(5, a.getEmail());
-			//stmt.setString(6, a.getRm());
-			//stmt.setString(7, a.getSenha());
-			//stmt.setString(8, a.getTelefone());
-			//stmt.setString(9, a.getCep());
-			//stmt.setString(10, a.getLogr());
-			//stmt.setString(11, a.getNumero());
-			//stmt.setString(12, a.getBairro());
-			//stmt.setString(13, a.getCidade());
-			//stmt.setString(14, a.getUf());
+					"UPDATE FN_ALUNO SET NM_ALUNO=?, "
+					+ "SOBRENOME_ALUNO=?, CPF_ALUNO=?, EMAIL_ALUNO=?, PW_ALUNO=?,"
+					+ " TELEFONE_ALUNO=?, CEP=?, LOGR=?, NUMERO=?, BAIRRO=?,"
+							+ "CIDADE=?, UF=?"
+							+ " WHERE RM_ALUNO=?");
+			//stmt.setInt(1,  1);
+			stmt.setString(1, a.getNome());
+			stmt.setString(2, a.getSobrenome());
+			stmt.setString(3, a.getCpf());
+			stmt.setString(4, a.getEmail());
+			stmt.setString(5, a.getSenha());
+			stmt.setString(6, a.getTelefone());
+			stmt.setString(7, a.getCep());
+			stmt.setString(8, a.getLogr());
+			stmt.setString(9, a.getNumero());
+			stmt.setString(10, a.getBairro());
+			stmt.setString(11, a.getCidade());
+			stmt.setString(12, a.getUf());
+			stmt.setString(13, a.getRm());
 
 			stmt.executeUpdate();
 

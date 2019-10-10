@@ -35,7 +35,7 @@ public class Cadastrar implements Tarefa {
 		if (bo.novoAluno(aluno) == 1) {
 			System.out.println("Aluno cadastro.");
 			dao.cadastrarAluno(aluno);
-			return "index.jsp"; // Criar página de cadastro concluido
+			return "sucesso.jsp"; // Criar página de cadastro concluido
 		} else {
 			System.out.println("dados inválidos");
 			return "erro.jsp";

@@ -31,7 +31,7 @@
 	</nav>
 <%@include file="bannerPrincipal.jsp"%>
 	<div class="container">
-	<h3>Usuário inexistente! Por favor cadastre-se.</h3>
+	<h3>OBRIGADO POR UTILIZAR NOSSO SISTEMA! VOLTE QUANDO QUISER.</h3>
 		<div class="row">
 			<div class="col">
 				<!-- FORM DE CADASTRO  -->

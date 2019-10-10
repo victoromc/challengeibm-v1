@@ -19,7 +19,7 @@ public class Excluir implements Tarefa{
 
 		dao.deletarAluno(rm, senha);
 		
-		return "index.jsp"; //Criar página de agradecimento
+		return "volteSempre.jsp"; //Criar página de agradecimento
 
 
 	}

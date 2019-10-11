@@ -5,7 +5,7 @@ import br.com.challengeibm.model.entities.Aluno;
 
 public class AlunoBO {
 	public Aluno validarLogin(String rm, String senha) {
-		return new AlunoDAO().consultarAluno(rm, senha);
+		return new AlunoDAO().consultarAluno(rm);
 	}
 
 	public int novoAluno(Aluno aluno) {
@@ -40,7 +40,7 @@ public class AlunoBO {
 	
 	public int atualizarAluno(Aluno aluno) {
 		AlunoDAO dao = new AlunoDAO();
-		if (dao.consultarAlunoPorRm(aluno.getRm()) != null ) {
+		if (dao.consultarAluno(aluno.getRm()) != null ) {
 			dao.atualizarAluno(aluno);
 			System.out.println("Aluno Atualizado");
 			return 1;

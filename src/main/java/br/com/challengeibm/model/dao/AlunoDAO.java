@@ -9,7 +9,7 @@ import br.com.challengeibm.model.entities.Aluno;
 import br.com.challengeibm.model.services.Conexao;
 
 public class AlunoDAO {
-	public Aluno consultarAlunoPorRm(String rm) {
+	/*public Aluno consultarAlunoPorRm(String rm) {
 
 		Aluno aluno = null;
 
@@ -44,8 +44,8 @@ public class AlunoDAO {
 		}
 
 		return aluno;
-	}
-	public Aluno consultarAluno(String rm, String senha) {
+	}*/
+	public Aluno consultarAluno(String rm) {
 
 		Aluno aluno = null;
 
@@ -54,6 +54,7 @@ public class AlunoDAO {
 					.prepareStatement("SELECT * FROM FN_ALUNO WHERE RM_ALUNO = ?");
 
 			stmt.setString(1, rm);
+			//stmt.setString(2, senha);
 		
 
 			ResultSet rs = stmt.executeQuery();

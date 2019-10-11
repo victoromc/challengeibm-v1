@@ -87,7 +87,7 @@
 						<div class="form-group col-md-6">
 							<label for="inputEmail4">Email</label> <input
 								class="form-control" id="inputEmail4" name="email"
-								placeholder="Ex: email@email.com" required
+								placeholder="Ex: email@dominio.com.br" required
 								onblur="valida('email'); validacaoEmail(form.email);">
 						</div>
 
@@ -100,14 +100,14 @@
 						<div class="form-group col-md-6">
 							<label for="inputPassword4">Senha</label> <input
 								class="form-control" placeholder="Senha" name="senha" id="senha"
-								required onblur="valida('senha');">
+								required onblur="valida('senha');" type="password">
 
 						</div>
 
 
 						<div class="form-group col-md-6">
 							<label>Celular</label> <input type="text" class="form-control"
-								placeholder="(nn) n nnnn nnnn" id="telefone" required
+								placeholder="DD999999999" id="telefone" required
 								name="telefone" />
 						</div>
 
@@ -125,7 +125,7 @@
 
 						<div class="form-group col-md-6">
 							<label>Nº</label> <input id="numero" type="text" required
-								name="n" class="form-control" />
+								name="n" class="form-control" placeholder="123"/>
 						</div>
 
 						<div class="form-group col-md-6">
@@ -186,6 +186,6 @@
 	<script type="text/javascript" src="js/validaCampo.js"></script>
 	<script src="js/cep.js"></script>
 	<script src="js/mask-cpf.js"></script>
-	<script src="js/mask.js"></script>
+	<!-- <script src="js/mask.js"></script> -->
 </body>
 </html>

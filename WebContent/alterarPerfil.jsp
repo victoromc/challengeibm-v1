@@ -54,13 +54,13 @@
 						<div class="form-group col-md-6">
 							<label for="inputAddress">Nome</label> <input
 								class="form-control" placeholder="Nome" name="nome"
-								id="form_name" required autofocus onblur="valida('nome');"  value=${aluno.nome }>
+								id="form_name" required onblur="valida('nome');"  value=${aluno.nome }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label for="inputAddress">Sobrenome</label> <input
 								class="form-control" placeholder="Sobrenome" name="sobrenome"
-								id="form_name" required autofocus onblur="valida('sobrenome');" value=${aluno.sobrenome }>
+								id="form_name" required onblur="valida('sobrenome');" value=${aluno.sobrenome }>
 						</div>
 
 						<div class="form-group col-md-6">
@@ -93,18 +93,18 @@
 						<div class="form-group col-md-6">
 							<label>Celular</label> <input type="text" class="form-control"
 								placeholder="(DD)9.9999-9999" id="telefone" required
-								name="telefone" >
+								name="telefone" value=${aluno.telefone } >
 						</div>
 
 						<div class="form-group col-md-6">
 							<label>CEP</label> <input id="cep" placeholder="Digite seu CEP"
 								required name="cep" class="form-control" class="mb-3"
-								pattern="\d*" maxlength="9" type="text"  value=${aluno.cep }>
+								pattern="\d*" maxlength="9" type="text" value=${aluno.cep } autofocus>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label>Logradouro</label> <input id="logradouro" type="text" name="logr"
-								class="form-control" value=${aluno.logr }>
+								class="form-control">
 						</div>
 						
 
@@ -115,17 +115,17 @@
 
 						<div class="form-group col-md-6">
 							<label>Bairro</label> <input id="bairro" type="text"
-								name="bairro" class="form-control" value=${aluno.bairro }>
+								name="bairro" class="form-control">
 						</div>
 
 						<div class="form-group col-md-6">
 							<label>Cidade</label> <input id="cidade" type="text"
-								name="cidade" class="form-control" value=${aluno.cidade }>
+								name="cidade" class="form-control">
 						</div>
 
 						<div class="form-group col-md-6">
 							<label>UF</label> <input id="uf" type="text" name="uf"
-								class="form-control" value=${aluno.uf }>
+								class="form-control">
 						</div>
 
 
@@ -171,6 +171,6 @@
 	<script type="text/javascript" src="js/validaCampo.js"></script>
 	<script src="js/cep.js"></script>
 	<script src="js/mask-cpf.js"></script>
-	<script src="js/mask.js"></script>
+	<!-- <script src="js/mask.js"></script> -->
 </body>
 </html>

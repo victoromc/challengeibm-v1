@@ -54,7 +54,7 @@
 						<div class="form-group col-md-6">
 							<label for="inputAddress">Nome</label> <input
 								class="form-control" placeholder="Nome" name="nome"
-								id="form_name" required autofocus onblur="valida('nome');" value=${aluno.nome }>
+								id="form_name" required autofocus onblur="valida('nome');"  value=${aluno.nome }>
 						</div>
 
 						<div class="form-group col-md-6">
@@ -65,34 +65,34 @@
 
 						<div class="form-group col-md-6">
 							<label>CPF/CNPJ</label> <input id="cpfOuCnpj" required
-								name=cpf type="text" class="form-control"  value=${aluno.cpf }>
+								name=cpf type="text" class="form-control" placeholder="CPF/CNPJ" readonly="true" value=${aluno.cpf }>
 						</div>
 
-
+						
 						<div class="form-group col-md-6">
 							<label for="inputEmail4">Email</label> <input
 								class="form-control" id="inputEmail4" name="email"
-								placeholder="Email" required
+								placeholder="email@dominio.com.br" required
 								onblur="valida('email'); validacaoEmail(form.email);"  value=${aluno.email }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label for="inputAddress2">RM</label> <input class="form-control"
 								placeholder="RM" name="rm" id="rm" required
-								onblur="valida('rm');"  value=${aluno.rm }>
+								onblur="valida('rm');" readonly="true" value=${aluno.rm }>
 						</div>
 
 						<div class="form-group col-md-6">
 							<label for="inputPassword4">Senha</label> <input
 								class="form-control" placeholder="Senha" name="senha" id="senha"
-								required onblur="valida('senha');"  value=${aluno.senha }>
+								type="password" required onblur="valida('senha');"  value=${aluno.senha }>
 
 						</div>
 
 
 						<div class="form-group col-md-6">
 							<label>Celular</label> <input type="text" class="form-control"
-								placeholder="(nn) n nnnn nnnn" id="telefone" required
+								placeholder="(DD)9.9999-9999" id="telefone" required
 								name="telefone" >
 						</div>
 
@@ -110,7 +110,7 @@
 
 						<div class="form-group col-md-6">
 							<label>Nº</label> <input id="numero" type="text" required
-								name="n" class="form-control" value=${aluno.numero }>
+								placeholder="123" name="n" class="form-control" value=${aluno.numero }>
 						</div>
 
 						<div class="form-group col-md-6">

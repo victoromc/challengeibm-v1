@@ -275,7 +275,7 @@
 					</tr>
 				</table>
 				<p>Tabela para construção do gráfico de V(t)=600000+30000.t</p>
-				<img src="img/2.PNG" id="img_2" />
+				<img src="img/2.png" id="img_2" />
 				<p>No eixo horizontal, temos o tempo decorrido em anos e, no
 					eixo vertical, temos o valor do imóvel em reais.</p>
 				<p>Observe que os pontos estão naturalmente alinhados. Observe
@@ -291,7 +291,7 @@
 					+ b. Nesse caso: y = V; x = t; a = 30000; b = 600000.)
 				</p>
 				<p>A representação gráfica da função V(t) = 600000 + 30000.t é:</p>
-				<img src="img/3.PNG" id="img_3" />
+				<img id="img_3" src="img/grafico3.png" />
 				<p>Dizemos que, nesse caso, temos uma função crescente, pois à
 					medida que o tempo “passa” (aumenta), o valor do imóvel “aumenta”
 					(cresce).</p>
@@ -388,7 +388,7 @@
 					</tr>
 				</table>
 				<p>Podemos utilizar o Excel para visualizar o gráfico:</p>
-				<img src="img/4.PNG" />
+				<img src="img/4.png" />
 				<p>Dizemos que, nesse caso, temos uma função decrescente, pois à
 					medida que o tempo “passa” (aumenta) o valor do maquinário
 					“diminui” (decresce). Podemos afirmar, nesse contexto, que temos
@@ -498,7 +498,7 @@
 						<td>1020,00</td>
 					</tr>
 				</table>
-				<img src="img/5.PNG" />
+				<img src="img/grafico5.png" />
 				<p>
 					4º) Observando a tabela e o gráfico, podemos notar que 200 km é uma
 					quilometragem na qual as despesas nas duas empresas são iguais a R$
@@ -723,7 +723,7 @@
 				<p>2º) As equações I e II, obtidas na etapa anterior, formam um
 					sistema de equações que pode ser resolvido de diversas maneiras.
 					Vamos ver uma dessas maneiras.</p>
-				<img src="img/7.png" />
+				<img src="img/grafico7.png" />
 				<p>
 					<br />Utilizando o <b>“Método da Substituição”</b>, devemos
 					escolher uma das equações, isolar uma das incógnitas e, então,
@@ -756,7 +756,7 @@
 				<hr />
 				<p>Neste momento, escolhemos uma das equações do sistema e
 					substituímos o valor de a para obtermos o valor de b.</p>
-				<img src="img/8.png" />
+				<img src="img/grafico8.png" />
 				<p>
 					<br />Por exemplo, vamos utilizar a equação 2.a + b = 25500.
 				</p>
@@ -803,7 +803,7 @@
 				<hr />
 				<p>Portanto, estima-se que após 12 anos o valor do veículo será
 					de US$ 13,000.00.</p>
-				<img id="startup" src="img/9.PNG" id="img_9">
+				<img id="startup" src="img/grafico9.png" id="img_9">
 				<h3>CUSTO, RECEITA, LUCRO E O BREAK EVEN POINT EM UMA STARTUP</h3>
 				<p>“GESTÃO FINANCEIRA</p>
 				<p>Ponto de equilíbrio</p>

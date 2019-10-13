@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="bootstrap.jsp"%>
-<link rel="stylesheet" href="css/cadastro.css" type="text/css" />
 <link rel="stylesheet" href="css/principal.css" type="text/css" />
 <link rel="shortcut icon" href="img/favicon.ico" />
 
@@ -55,6 +54,6 @@
 	<footer>
 		<p>Falcon IT &copy 2019 Todos os direitos reservados</p>
 	</footer>
-	
+	<script type="text/javascript" src="js/validaLogin.js"></script>
 </body>
 </html>

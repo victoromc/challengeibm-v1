@@ -12,7 +12,7 @@ public class Logout implements Tarefa {
 		HttpSession session = req.getSession();
 		session.invalidate();
 		
-		return"index.jsp";
+		return"volteSempre.jsp";
 		
 	}
 

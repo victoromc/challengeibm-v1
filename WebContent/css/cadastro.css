@@ -36,15 +36,6 @@ footer p{
 	margin: 32px auto;
 }
 
-#error
-{
-  border: 2px solid red;
-}
-
-#success
-{
-  border: 2px solid green;
-}
 
 @media(max-width: 576px) {
   #carouselExampleControls{

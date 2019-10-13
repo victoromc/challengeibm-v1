@@ -53,7 +53,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
-								<a class="tiraLink" href="cadastro.jsp" target="_blank">Cadastre-se</a>
+								<a class="tiraLink" href="cadastro.jsp">Cadastre-se</a>
 							</div>
 
 							<div class="col-md-6">

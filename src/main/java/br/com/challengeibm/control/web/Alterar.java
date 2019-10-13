@@ -2,6 +2,7 @@ package br.com.challengeibm.control.web;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import br.com.challengeibm.model.business.AlunoBO;
 import br.com.challengeibm.model.dao.AlunoDAO;
@@ -40,7 +41,7 @@ public class Alterar implements Tarefa {
 		}
 		
 
-		return "cursos.jsp"; // Criar página de cadastro concluido
+		return "alterarConcluido.jsp"; // Criar página de cadastro concluido
 	}
 
 }

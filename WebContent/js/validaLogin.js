@@ -3,24 +3,20 @@ function valida(campo) {
       senha = form.senha.value;
 
   if (campo == "rm") {
-    if ((rm == "") || (form.rm.value.length < 5)) {
-      form.rm.id = "error"
-      form.rm.focus();
-      return false;
+    if (rm.length < 5) {
+      form.rm.style.border = "2px solid red";
 
     } else {
-      form.rm.id = "success"
+      form.rm.style.border = "2px solid green";
     }
   }
 
   if (campo == "senha") {
-    if (senha == "") {
-      form.senha.id = "error"
-      form.senha.focus();
-      return false;
+    if (senha.length > 20 || senha.length < 4 ) {
+      form.senha.style.border = "2px solid red";
 
     } else {
-      form.senha.id = "success"
+      form.senha.style.border = "2px solid green";
     }
   }
 };

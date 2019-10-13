@@ -1,5 +1,3 @@
-
-
 .cadastro{
     width: 100%;
     height: 200px;
@@ -37,19 +35,6 @@
     margin-top: 40px;
 }
 
-
-a{
-    color: white;
-}
-
-a:hover{
-    color: white;
-}
-
-a:link{
-    text-decoration: none;
-}
-
 .titulo-cadastro{
     text-align: center;
     color: #fff;
@@ -59,4 +44,14 @@ a:link{
 .btn{
     display: block;
     margin: 50px auto;
+}
+a:hover {
+	color: red;
+}
+a{
+	display: inline-block;
+	margin-bottom: 30px;
+}
+.linkExcluir {
+	margin-left: 50px;
 }

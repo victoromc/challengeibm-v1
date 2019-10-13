@@ -38,7 +38,7 @@ public class Cadastrar implements Tarefa {
 			return "sucesso.jsp"; // Criar página de cadastro concluido
 		} else {
 			System.out.println("dados inválidos");
-			return "erro.jsp";
+			return "erroCadastro.jsp";
 		}
 	}
 }

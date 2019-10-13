@@ -9,14 +9,6 @@ footer p{
   margin-top: 116px;
 }
 
-#erro{
-  border: 2px solid red;
-}
-
-#success{
-  border: 2px solid green;
-}
-
 .tiraLink{
   text-decoration: none;
   color: grey;

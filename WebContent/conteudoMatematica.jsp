@@ -57,17 +57,12 @@
 					class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
 					role="button" aria-haspopup="true" aria-expanded="false">Perfil</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="alterarPerfil.jsp">Alterar</a> <a
-							class="dropdown-item" href="excluirPerfil.jsp">Excluir</a>
-						<div class="dropdown-divider"></div>
-						<a class="nav-item nav-link" href="controller?tarefa=Logout">Logout</a>
+						<a class="dropdown-item" href="visualizarPerfil.jsp">Visualizar Perfil</a> <a
+							class="dropdown-item" href="controller?tarefa=Logout">Logout</a>						
 					</div>
 			</div>
-			<!-- <a class="navbar-brand" onclick="return play('chatbot');" href="#"><img
-				src="img/microfone.png"></a>-->
 	</nav>
 
-	<!--------------------------------------------------------------------------------------------------------->
 	<%@include file="bannerPrincipal.jsp"%>
 
 	<div id="chatbot" class="box">
@@ -96,18 +91,12 @@
 		</div>
 	</div>
 
-	<div>
-		<img id="imgBot" class="imgBot2" src="img/bot.png" alt="Bot" height="80" width="80">
+	<div class="zoom">
+		<img id="imgBot" class="imgBot2" src="img/bot.png" alt="Bot" height="80" width="80" >
 	</div>
 
-	<!---------------------------------------------------------------------------------------------------------------------------------------->
 	<%@include file="conteudoMat.jsp"%>
-	<!------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-	<!-- <a href="conteudo-matematica-chat.html"><img class="chat" src="img/iconemicrofone.png" alt="ChatBot por voz"></a> -->
-
-
-	<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 	<footer>
 		<p>Falcon IT &copy 2019 Todos os direitos reservados</p>
 	</footer>
@@ -125,8 +114,6 @@
 
 	<script
 		src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
-	<script type="text/javascript" src="js/assistant.js"></script>
-	<script type="text/javascript" src="js/stt.js"></script>
 	<script type="text/javascript" src="js/full.js"></script>
 </body>
 </html>

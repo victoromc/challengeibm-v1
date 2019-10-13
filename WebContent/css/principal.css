@@ -52,7 +52,9 @@ footer p{
   text-align: center;
   padding-top: 30px;
 }
-
+.linkTelaAlterar{
+	color: red;
+}
 
 
 @media(max-width: 576px) {

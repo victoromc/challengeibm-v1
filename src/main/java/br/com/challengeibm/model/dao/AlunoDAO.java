@@ -9,42 +9,6 @@ import br.com.challengeibm.model.entities.Aluno;
 import br.com.challengeibm.model.services.Conexao;
 
 public class AlunoDAO {
-	/*public Aluno consultarAlunoPorRm(String rm) {
-
-		Aluno aluno = null;
-
-		try (Connection conn = Conexao.queroConectar()) {
-			PreparedStatement stmt = conn
-					.prepareStatement("SELECT * FROM FN_ALUNO WHERE RM_ALUNO = ? AND PW_ALUNO = ?");
-
-			stmt.setString(1, rm);
-
-			ResultSet rs = stmt.executeQuery();
-
-			if (rs.next()) {
-				aluno = new Aluno();
-				aluno.setCod(rs.getInt("ID_ALUNO")); 
-				aluno.setNome(rs.getString("NM_ALUNO"));
-				aluno.setSobrenome(rs.getString("SOBRENOME_ALUNO"));
-				aluno.setCpf(rs.getString("CPF_ALUNO"));
-				aluno.setRm(rs.getString("RM_ALUNO"));
-				aluno.setEmail(rs.getString("EMAIL_ALUNO"));
-				aluno.setSenha(rs.getString("PW_ALUNO"));
-				aluno.setTelefone(rs.getString("TELEFONE_ALUNO"));
-				aluno.setCep(rs.getString("CEP"));
-				aluno.setLogr(rs.getString("LOGR"));
-				aluno.setNumero(rs.getString("NUMERO"));
-				aluno.setBairro(rs.getString("BAIRRO"));
-				aluno.setCidade(rs.getString("CIDADE"));		
-				aluno.setUf(rs.getString("UF"));
-			}
-
-		} catch (ClassNotFoundException | SQLException e) {
-			e.printStackTrace();
-		}
-
-		return aluno;
-	}*/
 	public Aluno consultarAluno(String rm) {
 
 		Aluno aluno = null;

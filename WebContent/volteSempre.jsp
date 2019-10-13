@@ -11,27 +11,10 @@
 </head>
 <body>
 <!--Menu -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.jsp"><img class="logo"
-			src="img/Falcon IT-01.png"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-			aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-				<a class="nav-item nav-link" href="index.jsp">Matemática</a> <a
-					class="nav-item nav-link" href="index.jsp">Português</a> <a
-					class="nav-item nav-link" href="index.jsp">Lógica de
-					Programação</a>
-
-			</div>
-		</div>
-	</nav>
+<%@include file="navlinkDeslogado.jsp" %>
 <%@include file="bannerPrincipal.jsp"%>
 	<div class="container">
-	<h3>OBRIGADO POR UTILIZAR NOSSO SISTEMA! VOLTE QUANDO QUISER.</h3>
+	<h5>OBRIGADO POR UTILIZAR NOSSO SISTEMA! VOLTE QUANDO QUISER.</h5>
 		<div class="row">
 			<div class="col">
 				<!-- FORM DE CADASTRO  -->
@@ -53,7 +36,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
-								<a class="tiraLink" href="cadastro.jsp" target="_blank">Cadastre-se</a>
+								<a class="tiraLink" href="cadastro.jsp">Cadastre-se</a>
 							</div>
 
 							<div class="col-md-6">
@@ -72,6 +55,6 @@
 	<footer>
 		<p>Falcon IT &copy 2019 Todos os direitos reservados</p>
 	</footer>
-	
+	<script type="text/javascript" src="js/validaLogin.js"></script>
 </body>
 </html>
